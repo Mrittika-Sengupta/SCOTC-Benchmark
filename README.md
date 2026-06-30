@@ -16,7 +16,7 @@ SCOTC (**S**oftware **CO**verage and **T**est **C**ompleteness) is a structured,
 
 ---
 
-##  Dataset at a Glance
+##  Dataset
 
 | Property | Details |
 |---|---|
@@ -131,50 +131,6 @@ CR_max      = (15.0 / 12.0) × 100 = 125%
 - **Complexity degradation**: GPT-4o Completeness drops from 3.822 (simple) to 3.547 (complex); Gemini Pro drops from 3.456 to 2.849.
 - **Domain sensitivity**: All models perform best on Social Media and Authentication; worst on IoT and e-Governance.
 
----
-
-##  Getting Started
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/<your-username>/SCOTC-Benchmark.git
-cd SCOTC-Benchmark
-```
-
-### Explore the Annotation Dataset
-
-The main dataset file is `annotations/SCOTC_v3_Final.xlsx`. It contains:
-- Per-requirement scores from all 3 annotators
-- Consensus final scores for all 11 models
-- Error taxonomy labels per evaluation row
-- Domain and complexity tier metadata
-
-### Reproduce Coverage Ratios
-
-```python
-import pandas as pd
-
-df = pd.read_csv("results/benchmark_rankings.csv")
-df["CR"] = (df["Total"] / 12.0) * 100
-print(df[["Model", "Total", "CR"]].sort_values("CR", ascending=False))
-```
-
----
-
-##  Citation
-
-If you use this dataset or framework in your research, please cite:
-
-```bibtex
-@article{sengupta2025scotc,
-  title     = {A Rubric-Based Framework for Assessing Software Test Coverage Quality of
-               Large Language Models Across Multiple Application Domains},
-  author    = {Sen Gupta, Mrittika and Mahmud, Danish and Alam, MD Rasel Ul},
-  year      = {2025},
-  institution = {North South University; University of the Cumberlands}
-}
-```
 
 ---
 
@@ -186,10 +142,5 @@ This dataset and framework are released under the [MIT License](LICENSE) for ope
 
 ##  Acknowledgements
 
-We thank the three expert QA annotators who independently evaluated 1,980 test suite outputs to construct the gold-standard consensus dataset.
+Thank the three expert QA annotators who independently evaluated 1,980 test suite outputs to construct the gold-standard consensus dataset.
 
----
-
-##  Contact
-
-For questions or collaborations, please open a GitHub Issue or contact the authors via their institutional affiliations.
