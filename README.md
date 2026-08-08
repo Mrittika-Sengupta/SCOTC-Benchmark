@@ -265,30 +265,7 @@ Comparative Benchmark Results
 
 ---
 
-# Research Contributions
 
-This work contributes:
-
-- The SCOTC evaluation framework
-- A standardized rubric for requirement-level software testing
-- A benchmark dataset covering multiple software domains
-- A twenty-class software testing error taxonomy
-- Comparative evaluation of eleven state-of-the-art Large Language Models
-
----
-
-# Ongoing Project
-
-Future research directions include:
-
-- Multi-agent test generation and evaluation
-- Automated self-correcting software testing systems
-- Retrieval-Augmented Generation (RAG)
-- Few-shot prompting strategies
-- Domain-aware software testing assistants
-- Automated scoring based on the SCOTC framework
-
----
+ Ongoing Project
 
 
-This repository is intended for academic and research purposes. Please cite the associated paper if you use the SCOTC framework, benchmark dataset, or evaluation methodology in your work.
