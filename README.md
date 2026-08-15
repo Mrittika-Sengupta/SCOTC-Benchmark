@@ -1,5 +1,7 @@
 # A Rubric-Based Framework for Assessing Software Test Coverage Quality of Large Language Models
 
+# Ongoing Project
+
 ## Overview
 
 This repository accompanies the research paper:
@@ -19,15 +21,6 @@ Large Language Models (LLMs) are increasingly used to generate software test cas
 SCOTC provides a standardized evaluation framework that measures test quality using expert-defined rubrics and a structured error taxonomy. The framework was validated by evaluating eleven state-of-the-art LLMs across 180 functional requirements from nine different software domains.
 
 The results show that while modern LLMs generate high-quality functional test cases, they continue to struggle with boundary conditions, negative scenarios, security validation, performance testing, and complex enterprise workflows.
-
-
-<img width="4142" height="1434" alt="fig1_coverage_boxplot" src="https://github.com/user-attachments/assets/0dec8274-5751-4c73-806b-d0b254d8b4ff" />
-
-<img width="2941" height="1731" alt="fig2_model_ranking" src="https://github.com/user-attachments/assets/ea084202-f21b-4dd5-9c27-21303586e2a8" />
-
-<img width="1835" height="1478" alt="fig3_radar" src="https://github.com/user-attachments/assets/47e49d92-fe16-46a9-9126-2f0451df5b90" />
-
-
 
 
 ---
@@ -67,10 +60,6 @@ SCOTC evaluates each generated test suite using three quality dimensions.
 | Traceability | Measures whether every generated test case can be directly traced back to the requirement |
 
 Each dimension is scored on a five-point Likert scale.
-
-<img width="4060" height="1439" alt="fig4_domain_heatmap" src="https://github.com/user-attachments/assets/8e06a998-1f09-4305-818e-7ecb4f256d27" />
-
-<img width="4141" height="1434" alt="fig5_dimension_bar" src="https://github.com/user-attachments/assets/aed4fb81-532d-4aff-9bc5-9ef51f3812f3" />
 
 
 
@@ -171,29 +160,6 @@ Generate as many test scenarios as required for complete coverage.
 
 # Error Taxonomy
 
-<img width="3842" height="1434" alt="fig8_errors_by_model" src="https://github.com/user-attachments/assets/06d148fb-1be3-4b50-8bf0-951beff54d4e" />
-
-
-<img width="3244" height="1731" alt="fig9_top10_errors" src="https://github.com/user-attachments/assets/9c8ba93e-1fb3-4302-9908-0ec339d668e2" />
-
-
-<img width="4143" height="1734" alt="fig10_error_category" src="https://github.com/user-attachments/assets/e3924021-1bfb-4cb5-ad9f-4528c0bade12" />
-
-
-
-<img width="3897" height="2939" alt="fig11_error_heatmap" src="https://github.com/user-attachments/assets/98f26e8c-ff1d-4a33-bb5b-cc55da9848da" />
-
-
-<img width="4142" height="1734" alt="fig12_domain_errors_stacked" src="https://github.com/user-attachments/assets/4b22d816-c32e-4d68-a84b-ff937dadeb2e" />
-
-
-<img width="2342" height="1431" alt="fig13_error_vs_coverage" src="https://github.com/user-attachments/assets/9007f092-04c2-4bbc-8be2-9903f7760531" />
-
-
-
-
-
-
 SCOTC introduces twenty software testing error types grouped into seven categories:
 
 - Original Errors
@@ -266,6 +232,6 @@ Comparative Benchmark Results
 ---
 
 
- Ongoing Project
+
 
 
